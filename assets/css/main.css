@@ -1,0 +1,80 @@
+/* Colores :
+Gris Claro : #b5b6b7
+Gris Medio Oscuro : #707274
+Gris Oscuro : #3E3F40
+Black : black
+Letra : Raleway
+*/
+ body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #707274;
+  font-family: 'Raleway', sans-serif;
+}
+header{
+  padding: 80px 100px 20px 100px;
+}
+a{
+  text-decoration: none;
+  color:orange;
+}
+span.bold{
+  color: #3E3F40;
+  font-weight: bold;
+  text-decoration: underline;
+}
+section{
+  padding: 20px 100px;
+}
+div.datosRepresentante{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  /*background-color: #e7eef5;*/
+
+}
+ div.contenedorInput{
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+  width: 50%;
+ }
+ label{
+  margin-bottom: 15px;
+  display: block;
+ }
+ input.input-registro{
+  outline: none;
+  width: 400px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #707274;
+ }
+
+
+ /*div.contenedorInput span{
+  display: block;
+  background-color: rgba(51,51,51,0.8);
+  padding: 5px;
+  position: absolute;
+  left: 105%;
+  top: 8px;
+  width: 200px;
+  color: white;
+  display: none;
+}
+
+ div.contenedorInput span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid rgba(51,51,51,0.8);
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}*/

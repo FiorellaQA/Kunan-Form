@@ -1,81 +1,149 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="es">
 	<head>
-		<meta charset="UTF-8" >
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="assets/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet">
 		<title>Kunan Form | Fiorella Quisoe</title>
 	</head>
 	<body>
-		<header>
-			<p>Antes de iniciar la inscripción debes leer las <a href="#">bases del concurso.</a></p>
-			<p><span>Nota:</span>Al finalizar el formulario encontrarás el icono GUARDAR, el cual permitirá que puedas guardar la información ingresada si no culminaste el formulario, dándote la posibilidad de entrar cuando necesites concretar y/o editar antes de elegir el icono ENVIAR</p>
-		</header>
-		<section>
-			<h2>Formulario de Registro</h2>
-			<form action="">
-				<h3>Datos del Representante de la entidad postulante</h3>
-				<div class="datosRepresentante">
-					<div>
-						<label for="apellido">Apellidos</label>
-						<input class="input-registro" type="text" id="apellido" required>
-						<span></span>
+		<div class="flex-container">
+			<header>
+				<p>Antes de iniciar la inscripción debes leer las <a href="#">bases del concurso.</a></p>
+				<p><span class="bold">Nota</span>: Al finalizar el formulario encontrarás el icono GUARDAR, el cual permitirá que puedas guardar la información ingresada si no culminaste el formulario, dándote la posibilidad de entrar cuando necesites concretar y/o editar antes de elegir el icono ENVIAR</p>
+			</header>
+			<section class="flex-item">
+				<form action="">
+					<h2>Formulario de Registro</h2>
+					<h3>Datos del Representante de la entidad postulante</h3>
+					<div class="datosRepresentante">
+						<div class="contenedorInput">
+							<label for="apellido">Apellidos</label>
+							<input class="input-registro" type="text" id="apellido" required>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="nombre">Nombres</label>
+							<input class="input-registro" type="text" id="nombre" required>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
+							<input class="input-registro" type="date" id="nacimiento" required>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="edad">Edad</label>
+							<select class="input-registro" id="edad">
+								<option value="" hidden>Seleccione una opción</option>
+							</select>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="regionNacimiento">Región de Nacimiento</label>
+							<select class="input-registro" id="regionNacimiento">
+								<option value="" hidden>Seleccione una opción</option>
+							</select>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="regionResidencia">Región de Residencia</label>
+							<select class="input-registro" id="regionResidencia">
+								<option value="" hidden>Seleccione una opción</option>
+							</select>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="sexo">Sexo</label>
+							<input class="radioButtom" type="radio" name="sexo" id="femenino" value="femenino">Femenino<br>
+  							<input class="radioButtom" type="radio" name="sexo" id="masculino" value="masculino">Masculino<br>
+							<span id="messageRadio"></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="profesion">Profesión</label>
+							<input class="input-registro" type="text" id="profesion" required>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="cargo">Cargo en la organización</label>
+							<input class="input-registro" type="text" id="cargo" required>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="tiempoCargo">Tiempo en dicho cargo en cantidad de meses</label>
+							<input class="input-registro" type="number" id="tiempoCargo" required>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+							<label for="tiempoOrganizacion">Tiempo en la organización en cantidad de meses</label>
+							<input class="input-registro" type="number" id="tiempoOrganizacion" required>
+							<span></span>
+						</div>
 					</div>
-					<div>
-						<label for="nombre">Nombres</label>
-						<input class="input-registro" type="text" id="nombre" required>
-						<span></span>
+					<div class="datosEntidad">
+						<div class="contenedorInput">
+							<label for="nombreEntidad">Nombre de la Entidad</label>
+							<input class="input-registro" type="text" id="nombreEntidad" required>
+							<span></span>
+						</div>
+						<div class="contenedorInput" id="intervencionRegiones">
+							<span>Ámbito de intervención: </span>
+                			<p>¿Cuáles son las regiones, provincias y distritos donde se situan sus operaciones a lo largo de toda la cadena del negocio?</p>
+							<label for="apellido">Regiones</label>
+						</div>
+						<div class="contenedorInput">
+							<label for="añoOperar">¿Cuándo comenzaron a operar? (dd/mm/yyyy)</label>
+							<input class="input-registro" type="date" id="añoOperar" required>
+							<span></span>
+						</div>
+						<div class="contenedorInput">
+                			<label for="tipoEntidad">Tipo de organizaciòn</label><br>
+                			<select id = "tipoEntidad" class="entidades" size="4" name="" required>
+                  				<option value="">ONG</option>
+                  				<option value="">Fundaciones</option>
+                  				<option value="">Asociaciòn Civil </option>
+                  				<option value="">Empresa</option>
+                  				<option value="">Persona Natural</option>
+                  				<option value="">Otros</option>
+                			</select>
+							<span></span>
+						</div>
+						
 					</div>
-					<div>
-						<label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
-						<input class="input-registro" type="text" id="nacimiento" required>
-						<span></span>
-					</div>
-					<div>
-						<label for="edad">Edad</label>
-						<input class="input-registro" type="text" id="edad" required>
-						<span></span>
-					</div>
-					<div>
-						<label for="regionNacimiento">Región de Nacimiento</label>
-						<input class="input-registro" type="text" id="regionNacimiento" required>
-						<span></span>
-					</div>
-					<div>
-						<label for="regionResidencia">Región de Residencia</label>
-						<input class="input-registro" type="text" id="regionResidencia" required>
-						<span></span>
-					</div>
-					<div>
-						<label for="sexo">Sexo</label>
-						<input class="input-registro" type="text" id="sexo" required>
-						<span></span>
-					</div>
-					<div>
-						<label for="profesion">Profesión</label>
-						<input class="input-registro" type="text" id="profesion" required>
-						<span></span>
-					</div>
-					<div>
-						<label for="cargo">Cargo en la organización</label>
-						<input class="input-registro" type="text" id="cargo" required>
-						<span></span>
-					</div>
-					<div>
-						<label for="apellido">Apellidos</label>
-						<input class="input-registro" type="text" id="apellido" required>
-						<span></span>
-					</div>
-					<div>
-						<label for="apellido">Apellidos</label>
-						<input class="input-registro" type="text" id="apellido" required>
-						<span></span>
-					</div>
-				</div>
-			</form>
-		</section>
-		<footer>
-			
-		</footer>
+					<span id="indicacion"></span>
+					<button id="enviar">Enviar</button>
+				</form>
+			</section>
+			<footer></footer>
+		</div>
 		<script type="text/javascript" src="assets/js/script.js"></script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
